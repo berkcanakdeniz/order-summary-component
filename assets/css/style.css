@@ -15,8 +15,7 @@ body {
   align-items: center;
   height: 100vh;
   font-family: "Red Hat Display", sans-serif;
-  background: url(../images/pattern-background-desktop.svg)
-    var(--very-pale-blue);
+  background: url(../images/pattern-background-desktop.svg) var(--pale-blue);
   background-repeat: no-repeat;
   background-repeat-x: repeat;
 }
@@ -150,8 +149,7 @@ body {
 /* responsive */
 @media (max-width: 400px) {
   body {
-    background: url(../images/pattern-background-mobile.svg)
-      var(--very-pale-blue);
+    background: url(../images/pattern-background-mobile.svg) var(--pale-blue);
     background-repeat: no-repeat;
     background-repeat-x: repeat;
     background-size: contain;
