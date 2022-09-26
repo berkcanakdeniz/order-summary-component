@@ -1,0 +1,163 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/* general css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--very-pale-blue);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  background: url(../images/pattern-background-desktop.svg)
+    var(--very-pale-blue);
+  background-repeat: no-repeat;
+  background-repeat-x: repeat;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+/* summary card */
+.summary-card {
+  background-color: #fff;
+  width: 375px;
+  border-radius: 20px;
+}
+
+.summary-card img {
+  max-width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.summary-card .summary-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.summary-card .summary-info .hero {
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--dark-blue);
+}
+
+.summary-card .summary-info .desc {
+  color: var(--desaturated-blue);
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.summary-card .order-plan {
+  padding: 0px 30px;
+}
+
+.summary-card .order-plan .plan-info {
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.summary-card .order-plan .plan-info .desc {
+  margin-left: -30px;
+}
+
+.summary-card .order-plan .plan-info .desc .hero {
+  color: var(--dark-blue);
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.summary-card .order-plan .plan-info .desc > span {
+  color: var(--desaturated-blue);
+}
+
+.summary-card .order-plan .plan-info .change-btn > button {
+  background: none;
+  border: none;
+}
+
+.summary-card .order-plan .plan-info .change-btn > button > a {
+  color: var(--bright-blue);
+  font-weight: 700;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.summary-card .order-plan .plan-info .change-btn > button > a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.summary-card .order-plan .button-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.summary-card .order-plan .button-area .btn button {
+  background: none;
+  border: none;
+  padding: 10px 0;
+}
+
+.summary-card .order-plan .button-area .primary button {
+  background-color: var(--bright-blue);
+  border-radius: 10px;
+  color: var(--very-pale-blue);
+  width: 100%;
+  font-weight: 900;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.summary-card .order-plan .button-area .primary button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.summary-card .order-plan .button-area .white button {
+  color: var(--desaturated-blue);
+  margin: 20px;
+  font-weight: 900;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.summary-card .order-plan .button-area .white button:hover {
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+
+/* responsive */
+@media (max-width: 400px) {
+  body {
+    background: url(../images/pattern-background-mobile.svg)
+      var(--very-pale-blue);
+    background-repeat: no-repeat;
+    background-repeat-x: repeat;
+    background-size: contain;
+  }
+
+  .summary-card {
+    width: 300px;
+  }
+}
